@@ -39,8 +39,8 @@ var client = carelink.Client({
   password: config.password,
   maxRetryDuration: config.maxRetryDuration
 });
-var entriesUrl = (config.nsBaseUrl ? config.nsBaseUrl : 'https://' + config.nsHost) + '/api/v1/entries.json';
-var devicestatusUrl = (config.nsBaseUrl ? config.nsBaseUrl : 'https://' + config.nsHost) + '/api/v1/devicestatus.json';
+var entriesUrl = (config.nsBaseUrl ? config.nsBaseUrl : 'http://' + config.nsHost) + '/api/v1/entries.json';
+var devicestatusUrl = (config.nsBaseUrl ? config.nsBaseUrl : 'http://' + config.nsHost) + '/api/v1/devicestatus.json';
 
 logger.setVerbose(config.verbose);
 
